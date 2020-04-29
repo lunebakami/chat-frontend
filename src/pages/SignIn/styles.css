@@ -1,0 +1,22 @@
+.signin-container {
+  width: 300px;
+  max-width: 1120px;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 7px;
+
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin-container form {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
