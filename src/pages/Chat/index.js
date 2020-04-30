@@ -7,11 +7,13 @@ import { format, parseISO } from 'date-fns';
 import './styles.css';
 import api from '../../services/api';
 import { useHistory } from 'react-router-dom';
+import { useAuth } from '../../context/auth';
 
 export default function Chat() {
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState('');
   const username = localStorage.getItem('username');
+  const { setAuthTokens } = useAuth();
 
   const history = useHistory();
 
@@ -26,7 +28,9 @@ export default function Chat() {
   }, [messages]);
 
   function handleLogout() {
+    setAuthTokens();
     localStorage.removeItem('username');
+    localStorage.removeItem('tokens');
     history.push('/');
   }
 

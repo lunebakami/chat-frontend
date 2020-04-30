@@ -20,6 +20,11 @@ textarea {
   color: #44475a;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 button {
   cursor: pointer;
   background-color: #ff5555;
@@ -28,6 +33,8 @@ button {
   color: #fff;
   height: 50px;
   width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
 }
 
 input {

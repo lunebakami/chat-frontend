@@ -1,0 +1,130 @@
+h1 {
+  color: #fff;
+  text-align: center;
+  padding-left: 100px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+#logout {
+  width: 35px;
+  height: 40px;
+  border-radius: 4px;
+  margin-left: 80px;
+}
+
+.chat-admin {
+  width: 750px;
+  max-width: 1120px;
+  height: 80vh;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 7px;
+
+  background-color: #44475a;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.chat-admin .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-admin .search form {
+  margin: 10px;
+}
+
+.chat-admin .search form input {
+  margin-bottom: 10px;
+}
+
+.chat-admin .messages-admin {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6272a4;
+  border-radius: 4px;
+}
+
+.chat-admin .messages-admin .message {
+  width: 500px;
+  margin: 7px 0 0 7px;
+  padding: 5px 0;
+  background-color: #f8f8f2;
+  border-radius: 4px;
+  color: #000;
+
+  word-break: break-all;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.chat-admin .messages-admin .message #delete {
+  min-width: 30px;
+  width: 30px;
+  min-height: 30px;
+  height: 30px;
+  margin-right: 3px;
+  align-self: flex-start;
+}
+
+.user-container {
+  width: 100%;
+}
+
+.user-container #userinfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#userinfo #username {
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 7px;
+}
+
+#date {
+  color: #333;
+  font-size: 13px;
+  padding-right: 5px;
+  display: flex;
+}
+
+#message-content {
+  color: #333;
+  margin-left: 7px;
+  word-break: break-word;
+}
