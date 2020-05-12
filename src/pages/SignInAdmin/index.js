@@ -52,6 +52,7 @@ export default function SignInAdmin() {
             onChange={(e) => {
               setUsername(e.target.value);
             }}
+            required
           />
 
           <input
@@ -61,6 +62,7 @@ export default function SignInAdmin() {
             onChange={(e) => {
               setPassword(e.target.value);
             }}
+            required
           />
           <button type="submit">Sign In</button>
         </form>

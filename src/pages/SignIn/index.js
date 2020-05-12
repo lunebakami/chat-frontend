@@ -43,6 +43,7 @@ export default function SignIn() {
           onChange={(e) => {
             setUsername(e.target.value);
           }}
+          required
         />
         <button type="submit">Sign In</button>
         <button>
